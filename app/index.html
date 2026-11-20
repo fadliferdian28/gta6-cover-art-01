@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunset Syndicate — Cover Maker</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="editor" id="editor">
+    <header class="brand">
+      <p class="eyebrow">SUNSET SYNDICATE</p>
+      <h1>Cover compositor</h1>
+      <p class="lede">Six panels. One crew. Your photos, graded at sunset and lettered like a poster.</p>
+    </header>
+
+    <section class="block">
+      <div class="block-head"><h2>Panels</h2><span class="count">6</span></div>
+      <div id="panels" class="panels"></div>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><h2>Words</h2></div>
+      <div class="fields">
+        <label>Title<input id="title" type="text" maxlength="34" value="SUNSET SYNDICATE"></label>
+        <label>Subtitle<input id="subtitle" type="text" maxlength="48" value="every crew has its sunset"></label>
+        <label>Quote<input id="quote" type="text" maxlength="54" value="THE COOLEST CREW ON THE COAST"></label>
+        <label>Quote source<input id="quoteSource" type="text" maxlength="30" value="THE SUNSET HERALD"></label>
+        <label>Tagline<input id="tagline" type="text" maxlength="52" value="ONE CREW · ONE COAST · ONE LAST SCORE"></label>
+        <label>Credits<textarea id="credits" rows="2" maxlength="150">A NEON REEF PICTURES PRODUCTION · STARRING YOU AND YOUR CREW
+SHOT ON YOUR OWN CAMERA · GRADED AT SUNSET</textarea></label>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="block-head"><h2>Look</h2></div>
+      <div class="grades" id="grades"></div>
+      <label class="select-row">Export size
+        <select id="size">
+          <option value="landscape">1920 × 1080 — landscape</option>
+          <option value="square">1080 × 1080 — square</option>
+          <option value="portrait">1080 × 1350 — portrait</option>
+        </select>
+      </label>
+    </section>
+
+    <div class="actions">
+      <button id="export" type="button">Export PNG</button>
+      <p id="status" role="status">Drag a panel to steer its crop.</p>
+    </div>
+  </aside>
+
+  <main class="stage">
+    <div class="stage-top">
+      <span class="live"><i></i> Live preview</span>
+      <span id="dims" class="dims">1920 × 1080</span>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="cover" width="1920" height="1080" aria-label="Sunset Syndicate cover preview"></canvas>
+    </div>
+    <p class="tip">Click a panel, then drag to pan. Zoom with its slider. Photos never leave this machine.</p>
+  </main>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
