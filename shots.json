@@ -1,0 +1,6 @@
+[
+  { "name": "1-cover.jpg", "query": "?shot=cover&size=landscape", "w": 1280, "h": 720 },
+  { "name": "2-editor.jpg", "query": "?shot=editor&size=landscape", "w": 1280, "h": 720 },
+  { "name": "3-cover.jpg", "query": "?shot=cover&size=portrait", "w": 1024, "h": 1280 },
+  { "name": "4-cover.jpg", "query": "?shot=cover&size=square", "w": 1024, "h": 1024 }
+]
