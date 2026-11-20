@@ -9,6 +9,8 @@ panels, pick a role tag, grade them Sunset, Neon, Golden Hour or Noir, write the
 tagline, then export a 1920 × 1080, 1080 × 1080 or 1080 × 1350 PNG. Everything runs in the browser on the
 2D canvas API — no libraries, no fonts to fetch, and photos never leave your machine.
 
+The 7 character portraits in `app/samples/` (`boss.jpg`, `captain.jpg`, `driver.jpg`, `lookout.jpg`, `mechanic.jpg`, `queen.jpg`, `rider.jpg`) are image-model-made originals created for this entry; `boulevard.jpg` and `pier.jpg` are the kit starter's sample scenes.
+
 ## Run it
 
 ```sh
